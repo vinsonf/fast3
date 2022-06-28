@@ -1,0 +1,26 @@
+.sq-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  height: 600px;
+}
+
+button {
+  width: 200px;
+  font-size: 100px;
+  font-weight: bold;
+  color: white;
+}
+
+.x {
+  background-color: #f00;
+}
+.o {
+  background-color: blue;
+}
+.square-empty{
+  background-color: black;
+}
+.square-filled {
+  cursor: not-allowed;
+}

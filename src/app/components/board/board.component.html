@@ -1,0 +1,13 @@
+<p>board works!</p>
+<div class="sq-container" *ngIf="playersTurn$ | async as playersTurn">
+  <!-- <button [disabled]="square !== '-'" [ngStyle]="{
+    backgroundColor: square !== '-' ? square=== 'X' ? 'red' : 'blue': 'black',
+    cursor: square !== '-' ? 'not-allowed' : 'pointer'
+  }" *ngFor="let square of (squares$ | async); let i = index" (click)="nextTurn(i, playersTurn)">
+    <span>{{square}}</span>
+  </button> -->
+
+  <button [disabled]="square !== '-'" [ngClass]="getSqaureClass(square)" *ngFor="let square of (squares$ | async); let i = index" (click)="nextTurn(i, playersTurn)">
+    <span>{{square}}</span>
+  </button>
+</div>

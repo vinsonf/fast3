@@ -1,0 +1,11 @@
+<p>info-players works!</p>
+<div *ngIf="players$ | async as players">
+  <div>Player 1: {{players[0]}}: {{player1Score$ | async}}</div>
+  <div>Player 2: {{players[1]}}: {{player2Score$ | async}}</div>
+
+    <!-- <div *ngIf="{turn:turn$ | async} as item;">
+      <div>Turn: {{players[item.turn ?? 0]}}</div>
+    </div> -->
+    <div>Turn: {{playersTurn$ | async}}</div>
+
+</div>
