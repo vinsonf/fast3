@@ -2,6 +2,7 @@ import { createFeatureSelector, createSelector } from '@ngrx/store';
 
 import * as fromPlayers from '../reducers/players.reducer';
 
+console.log('selectors');
 const selectPlayersFeatureState = createFeatureSelector<fromPlayers.State>('players');
 
 export const selectPlayers = createSelector(
